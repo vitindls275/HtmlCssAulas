@@ -8,8 +8,10 @@
     background-color: plum;
     color: saddlebrown;
     text-align: center;
-    margin: auto;
-    border-radius: 20px;
+    margin: 0 auto;
+    border-radius: 20px;  
+    padding: center;
+
 }
 #imgc{
     width: 30px;
