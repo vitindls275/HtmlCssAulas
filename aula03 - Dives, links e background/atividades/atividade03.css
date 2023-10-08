@@ -1,27 +1,40 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 0;    
 }
 #cabecalho{
-    width: 1000px;
-    height: 65px;
-    background-color: plum;
-    color: saddlebrown;
-    text-align: center;
+    width: auto;
+    height: 80px;
     margin: 0 auto;
-    border-radius: 20px;  
-    padding: center;
+    background-color: plum;
+    color: white; 
+    text-align: center;
+    
+}
+#imga{
+    width: auto;
+    height: auto;
+    margin-top: -115px;
+  
+}
+#imgb{
+    width: 1349px;
+    height: 600px;
+    margin-top: -52px;
 
 }
-#imgc{
-    width: 30px;
-    padding: 0px;
+#titulo{
+    font-size: 25px;
+    text-align: left;
+    margin-left: 10px;
     
     
 }
-#titulo{
-    font-size: 55px;
-    
+#loc{
+    font-size: 20px;
+    margin-top: -10px;
+    text-align: right;
+    margin-right: 10px;
 }
 #sub1{
     margin: 100px;
@@ -29,4 +42,6 @@
 }
 #links{
     text-align: center;
+    margin: 550px 500px;
+
 }
