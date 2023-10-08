@@ -1,47 +1,57 @@
 *{
     margin: 0;
-    padding: 0;    
+    padding: 0;     
+}
+#pagina{
+    /* margin 1 valor = todos os lados  */
+    /* margin 2 valores = eixo y (cima e baixo) e eixo x (esqueda e direita) */
+    /* margin 4 valores = sentido horario (cima, direita, baixo e esquerda) */
+    margin: 0 auto;
+    width: 1349px;
+    
 }
 #cabecalho{
     width: auto;
-    height: 80px;
-    margin: 0 auto;
+    height: 70px;
+    margin: -15px auto;
     background-color: plum;
     color: white; 
-    text-align: center;
-    
+    text-align: center;   
 }
 #imga{
     width: auto;
     height: auto;
-    margin-top: -115px;
-  
+    margin-top: -120px; 
 }
 #imgb{
     width: 1349px;
     height: 600px;
-    margin-top: -52px;
+    margin-top: -0px;
+}
+#cabecalho2{
+    width: 1200px;
+    height: 55px;
+    margin: 600px auto;
+    background-color: white;  
+    color: black;
+    text-align: center; 
 
+      
 }
 #titulo{
     font-size: 25px;
     text-align: left;
     margin-left: 10px;
-    
+    margin-top: 15px;
     
 }
 #loc{
     font-size: 20px;
-    margin-top: -10px;
+    margin-top: -15px;
     text-align: right;
     margin-right: 10px;
-}
-#sub1{
-    margin: 100px;
-    width: 30px;
 }
 #links{
     text-align: center;
     margin: 550px 500px;
-
 }
