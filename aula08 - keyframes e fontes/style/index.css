@@ -1,0 +1,164 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: inter;
+}
+
+@keyframes mudaCor{
+    0%{
+        background-color: #eff7f6;
+        border-radius: 500px;
+        margin-top: 0px;
+        width: 100px;
+        height: 200px;
+        
+    }
+    10%{
+        background-color:  #f72585;
+        margin-right: 500px;
+        width: 400px;
+        height: 200px;
+    }
+    20%{
+        background-color: #b5179e;
+        margin-right: 200px;
+        width: 100px;
+        height: 200px;
+    }
+    30%{
+        background-color: #7209b7;
+        margin-left: 300px;
+        width: 200px;
+        height: 200px;
+    }
+    40%{
+        background-color: #560bad;
+        margin-left: 0px;
+        width: 400px;
+        height: 200px;
+    }
+    50%{
+        background-color: #480ca8;
+        margin-left: 400px;
+        width: 100px;
+        height: 200px;
+    }
+    60%{
+        background-color: #3a0ca3;
+        margin: 0 auto;
+        width: 100px;    
+        height: 200px; 
+    }
+    70%{
+        background-color: #3f37c9;
+        margin-left: 400px;
+        width: 700px;
+        height: 200px;
+    }
+        
+    80%{
+        background-color: #4361ee;
+        margin-left: 400px;
+        width: 100px; 
+        height: 200px;
+    }
+    90%{
+        background-color: #4895ef;
+        margin-left: 400px;
+        width: 100px; 
+        height: 200px;     
+    }
+    100%{
+        background-color: #4cc9f0;
+        margin: 100 400px;
+        width: 500px;  
+        height: 200px;  
+    }
+}
+
+@keyframes mudaImg {
+    0%{
+        background-image: url(../images/mega\ charizard.png);
+        transition: 3s;
+    }
+    10%{
+        transition: 3s;
+        background-image: url(../images/pokemon1.jpg);
+    }
+    20%{
+        transition: 3s;
+        background-image: url(../images/pokemon2.jpg);
+    }
+    30%{
+        transition: 3s;
+        background-image: url(../images/pokemon3.jpg);
+    }
+    40%{
+        transition: 3s;
+        background-image: url(../images/pokemon4.jpg);
+    }
+    50%{
+        transition: 3s;
+        background-image: url(../images/pokemon5.jpg);
+    }
+    60%{
+        transition: 3s;
+        background-image: url(../images/pokemon6.webp);
+    }
+    70%{
+        transition: 3s;
+        background-image: url(../images/pokemon7.jpg);
+    }
+        
+    80%{
+        transition: 3s;
+        background-image: url(../images/pokemon8.jpg);
+    }
+    90%{
+        transition: 3s;
+        background-image: url(../images/pokemon9.jpg);
+    }
+    100%{
+        transition: 3s;
+        background-image: url(../images/pokemon10.jpg);
+    }
+}
+
+@font-face{
+    font-family: pokemon;
+    src: url(../fonts/pokemon/Pokemon\ Solid.ttf);
+    /* tipo de arquivo de fonte : otf, ttf */
+}
+
+@font-face{
+    font-family: inter;
+    src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+h3{
+    font-family: pokemon;
+}
+
+#caixaCor{
+    width: 500px;
+    height: 200px;
+    background-color: red;
+    animation-name: mudaCor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    margin: 10px auto;
+   
+}
+
+#caixaImg{
+    width: auto;
+    height: 500px;
+    background-image: url(../images/mega\ charizard.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0px auto;
+    animation-name: mudaImg;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
