@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula 9 - fomularios</title>
+        <link rel="stylesheet" href="style/index.css">
+    </head>
+    <body>
+        <h1>FORMULÁRIO</h1><br>
+        <h3>cadastro</h3><br>
+        <!-- method="get" - Pega as informações, coloca no url, manda para o servidor -->
+        <!-- method="post" - Pega as informações,e manda direto para o servidor -->
+        
+        <form action="Cadastrar.php" method="post"> 
+            <!-- type="text" - texto normal -->
+            <!-- placeholder= texto fantasma dentro do input -->
+            <label for="Nome">Nome</label>
+            <input required type="text" id="Nome" placeholder="  Insira seu Nome Completo">
+
+            <!-- type="email" - PARA VALIDAR EMAIL DE FORMA SIMPLES -->
+            <label for="Email">Email</label>
+            <input required type="email" id="Email" placeholder="         Insira seu Email">
+            
+            <!-- type="password" - para senhas -->
+            <label for="Senha">Senha</label>
+            <input required type="password" id="Senha" placeholder="         Insira sua Senha">
+
+            <label for="Confime sua Senha">Confime sua Senha</label>
+            <input required type="password" id="ConfimarSenha" placeholder="        Confime sua Senha">
+
+            <!-- NUMBER - receber valores numéricos -->
+            <label for="Number">Idade</label>
+            <input type="number" id="Number" step="1" min="1" max="100" placeholder="  idade">
+
+            <!-- date para datas -->
+            <label for="DataNascimento">Insira sua data de nascimento</label>
+            <input required type="date" id="DataNascimento">
+
+            <!-- Time - para horas -->
+            <label for=""> Insira a hora do nascimento</label>
+            <input type="time">
+            <!-- Color - para cores -->
+            <label for="Cor">Cor</label>
+            <input type="color" id="Cor">
+
+            <!-- File - para arquivos -->
+            <label for="arquivo">Insira uma foto de perfil</label>
+            <input type="file" id="arquivo">
+
+            
+            <!-- checkbox - para verificar se sim ou se nao  -->
+            <label for="escolha">Deseja receber notificações</label>
+            <input type="checkbox" id="escolha">
+
+            <label for="Sexo">Qual é o seu sexo?</label>
+            <fieldset>
+                <!-- Radio - Varirias opções podendo marcar apenas uma -->
+                Homem<input type="radio" name="Sexo" value="Homem">
+                Mulher<input type="radio" name="Sexo" value="Mulher">
+                Não dizer<input type="radio" name="Sexo" value="naoDizer">
+            </fieldset>
+            
+            <label for="estado">Selecione o estado onde mora</label>
+            <select id="estado">
+                <option value="DF">Distrito Federal</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="AC"></option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ"></option>
+                <option value="BA"></option>
+            </select>
+
+            <!-- Textarea - Área do texto-->
+            <label for="feedback">feedback</label>
+            <textarea id="feedback" cols="40" rows="15" maxlength="100"></textarea>
+        
+            <button type="submit">Cadastrar</buton>
+            <button type="reset">REFAZER FORMULÁRIO</button>
+            <!-- SUBMIT - ENVIA 
+            RESET - APAGA OS INPUTS 
+            MENU - BOTÃO PARA MENUS 
+            BUTTON - BOTÃO SEM AÇÃO -->
+        </form>
+         
+    </body>
+</html>

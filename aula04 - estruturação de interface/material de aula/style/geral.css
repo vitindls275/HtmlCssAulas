@@ -57,24 +57,5 @@ footer {
     color: whitesmoke;
     background-color: rgb(75, 75, 75);
 }
-@keyframes ig {
-    0%{
-        background-color: #adb5bd;
-        transition: 5ms;
-    }
-    50%{
-        background-color: #adb5bd;
-        transition: 5ms;
-    }
-    100%{
-        background-color: #dee2e6;
-        transition: 5ms;
-    }
-}
 
-#ig{
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-name: ig;
-}
  
