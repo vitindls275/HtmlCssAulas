@@ -1,0 +1,104 @@
+@keyframes borda{
+    0%{
+        border: 3px solid  #00000f;
+        transition: 0.5s;
+    }
+    50%{
+        border: 3px solid  aliceblue;
+        transition: 0.5s;
+    }
+    100%{
+        border: 3px solid  aqua;
+        transition: 0.5s;
+    }
+}
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#pagina{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, #3c096c 5%, #00000f 70%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 50%;
+    height: 700px;
+    background-color: aliceblue;
+    /* border-radius: 15px; */
+    box-shadow: 6px 6px 15px #9d4edd;
+    display: flex;
+    overflow: hidden;
+    background-color: #06010e00;
+    
+}
+#banner , #formulario{
+    width: 50%;
+    height: 100%;
+}
+#banner{
+    background-image: url(../images/blue-purple-dark-pink-cube-digital-art-4k-abstract.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+#efeito{
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(90deg, #00000f4b 10%,  #18032be7 60%);  */
+    background-color: #00000f77;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+
+h2{
+    margin: 20px 0px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+}
+
+input{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 1s;
+}
+
+input:focus{
+    width: 320px;
+    height: 40px;
+    transition: 1s;
+    background-color: aqua;
+}
+
+input:hover{
+    transition: 0.3s;
+    animation-name: borda 1.5s infinite;
+}
+
+button{
+    width: 200px;
+    height: 30px;
+    margin: 10px auto;
+    border-radius: 8px;
+}
