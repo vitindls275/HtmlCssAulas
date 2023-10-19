@@ -1,0 +1,59 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+table{
+    border-collapse: collapse;
+    width: 400px;
+    height: 300px;
+}
+
+th,td{
+    border: 2px solid black;
+}
+
+th{
+    background-color: #dee2e6;
+}
+
+th:empty{
+    border: none;
+    background-color: transparent;
+}
+
+th:active,td:active{
+    background-color: #28ce2e96;  
+    border: 2px solid #084e0a ;
+
+}
+th:hover{
+    background-color: #21b42681;
+}
+
+td{
+    text-align: center;
+}
+
+h3{
+    margin: 30px;
+}
+
+#listaAlunos{
+    width: 600px;
+    height: auto;
+}
+#listaAlunos th, #listaAlunos td{
+    height: 30px;
+}
+
+#scroll{
+    width: 30px;
+    height: 3000px;
+}
+
+thead{
+    position: sticky;
+    top: -1px;
+}
+
