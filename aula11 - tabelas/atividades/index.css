@@ -1,0 +1,66 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#banner{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    width: 420px;
+    margin: 25px;
+    height: 40px;
+    border: 1px solid white;
+    border-bottom:  2px solid black;
+}
+
+placeholder{
+    width: 400px;
+    height: 35px;
+}
+
+table{
+    width: 420px;
+    height: auto;
+    border-collapse: collapse;
+}
+
+th,td{
+    border: 1px solid black;
+    height: 48px;
+    text-align: center; 
+}
+button{
+    width: 170px;
+    height: 35px;
+    /* color: white;
+    background-color: aqua; */
+    margin: 10px;
+    box-shadow: 2px 2px gray;
+    border-radius: 5px;
+    
+}
+
+button:hover{
+    width: 190px;
+    height: 40px;
+    background-color: #2a9d8f;
+    color: white;
+    transition: 0.5s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#scroll{
+    width: 30px;
+    height: 2000px;
+}
