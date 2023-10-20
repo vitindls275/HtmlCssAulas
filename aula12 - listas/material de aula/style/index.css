@@ -1,27 +1,38 @@
 *{
     margin: 0%;
-    height: 0%;
+    padding: 0%;
 }
 
 body{
-    text-align: center;
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
 }
 
 #viajem{
     width: 300px;
     height: auto;
+    padding: 30px;
     background-color: #00a7fba6;
-    margin: 20px ;
+    margin: 20px 0px;
 }
 
 #compras{
     width: 300px;
     height: auto;
-    background-color: #7109b7c7;
+    padding: 30px;
+    background-color: #ff5c8a;
+    margin: 20px 0px;
 }
 
 #computadores{
     width: 300px;
     height: auto;
-    background-color: #240046ce;
+    padding: 30px;
+    background-color: #9d4edd;
+    margin: 20px 0px;
+}
+
+h1,h3{
+    margin: 20px auto;
 }
