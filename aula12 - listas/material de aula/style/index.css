@@ -1,0 +1,27 @@
+*{
+    margin: 0%;
+    height: 0%;
+}
+
+body{
+    text-align: center;
+}
+
+#viajem{
+    width: 300px;
+    height: auto;
+    background-color: #00a7fba6;
+    margin: 20px ;
+}
+
+#compras{
+    width: 300px;
+    height: auto;
+    background-color: #7109b7c7;
+}
+
+#computadores{
+    width: 300px;
+    height: auto;
+    background-color: #240046ce;
+}
