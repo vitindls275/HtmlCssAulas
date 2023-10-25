@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#pagina,header,main,footer,#galeria{
+    width: 100%;
+    display: flex;
+}
+
+#pagina{
+    flex-direction: column;
+    align-items: center;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* CABECALHO */
+
+header{
+    height: 80px;
+    background-color: #2A2B2A;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/* FIM CABECALHO */
+
+/* CONTEUDO */
+
+main{
+    padding: 20px 0px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h4{
+    font-weight: 900;
+    font-size: 23px;
+}
+
+hr{
+    width: 45%;
+    border: 2px solid #F5124B;;
+}
+
+#destaque{
+    width: 60%;
+    padding: 20px;
+    margin: 22px 0px;
+    border-radius: 10px;
+    border: 1px solid  gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+#destaque p{
+    color: gray;
+    font-weight: 700;
+}
+
+p{
+    font-weight: 700;
+    margin: 22px 0px;
+}
+
+#destaque h5{
+    font-weight: 900;
+    font-size: 23px;
+}
+    
+#destaque img{
+    width: 100%;
+}
+
+button{
+    width: 80px;
+    height: 35px;
+    padding: 5px;
+    background-color: #F5124B;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+#textpag{
+    text-align: center;
+    width: 60%;
+}
+
+#galeria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px 10px;
+    gap: 10px;
+}
+
+.imagem{
+    width: 100%;
+}
+
+.post{
+    width: 200px; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+/* FIM CONTEUDO */
+
+
+
+footer{
+    height: 60px;
+    background-color: #2A2B2A;
+}
+
