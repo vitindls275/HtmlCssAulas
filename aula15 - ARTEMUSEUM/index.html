@@ -1,30 +1,45 @@
 <!DOCTYPE html>
-<html lang="ptbr">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style/geral.css">
+        <link rel="stylesheet" href="style/index.css">
+        <link rel="stylesheet" href="style/@media.css" media="screen and (max-width: 768px)" style="transition: 0.5s;"> 
         <title>ArteMuseum</title>
     </head>
     <body>
         <div id="pagina">
             <header>
                 <h1>ArtMuseum</h1>
-                <nav id="menupc">
+                <nav id="menuPc">
                     <ul>
                         <li><a href="#"> Home</a></li>
-                        <li><a href="">Galeria</a></li>
-                        <li><a href="">Contato</a></li>
+                        <li><a href="#">Galeria</a></li>
+                        <li><a href="#">Contato</a></li>
                     </ul>
                 </nav>
+                <div id="menuIcon" onclick="abrirMenu()">
+                    <img class="imagem" src="images/menuIconn.svg" alt="">
+                </div>
             </header>
+            <nav id="menuMobile">
+                <ul>
+                    <li><a href="#"> Home</a></li>
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
             <main>
                 <h4>DESTAQUE DA SEMANA</h4>
                 <hr>
                 <div id="destaque">
                     <h5>elizabeth</h5>
+                    <picture>
+                        <source class="imagem" srcset="images/elizabethMenor.png" media="screen and (max-width : 768px)">
+                        <source class="imagem" srcset="images/elizabethLandscape.png" media="screen and (orientation: landscape) and (max-height: 500px)">
                     <img src="images/elizabeth.jpg" alt="">
+                    </picture>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum architecto tempora enim incidunt nam delectus suscipit. Aliquid laboriosam similique dolores rerum. Ratione at hic voluptates cum quod fuga quo harum.</p>
                     <button type="button">Ver sobre</button>
                 </div>
@@ -36,36 +51,37 @@
 
                 <section id="galeria">
                     <div class="post">
-                        <h5>TITULO ARTE</h5>
+                        <h3>TITULO ARTE</h3>
                         <img class="imagem" src="images/arte1.jpg" alt="">
                         <p>DESCRIÇÃO DA ARTE</p>
-                        <button>Ver sobre</button>
-                    </div> <div class="post">
-                        <h5>TITULO ARTE</h5>
-                        <img class="imagem" src="images/arte1.jpg" alt="">
-                        <p>DESCRIÇÃO DA ARTE</p>
-                        <button>Ver sobre</button>
-                    </div> <div class="post">
-                        <h5>TITULO ARTE</h5>
-                        <img class="imagem" src="images/arte1.jpg" alt="">
-                        <p>DESCRIÇÃO DA ARTE</p>
-                        <button>Ver sobre</button></div> <div class="post">
-                            <h5>TITULO ARTE</h5>
+                        <button type="button">Ver sobre</button>
+                    </div> 
+                        <div class="post">
+                            <h3>TITULO ARTE</h3>
                             <img class="imagem" src="images/arte1.jpg" alt="">
                             <p>DESCRIÇÃO DA ARTE</p>
-                            <button>Ver sobre</button></div> <div class="post">
-                                <h5>TITULO ARTE</h5>
+                            <button type="button">Ver sobre</button>
+                        </div> 
+                            <div class="post">
+                                <h3>TITULO ARTE</h3>
                                 <img class="imagem" src="images/arte1.jpg" alt="">
                                 <p>DESCRIÇÃO DA ARTE</p>
-                                <button>Ver sobre</button></div> <div class="post">
-                                    <h5>TITULO ARTE</h5>
-                                    <img class="imagem" src="images/arte1.jpg" alt="">
-                                    <p>DESCRIÇÃO DA ARTE</p>
-                                    <button>Ver sobre</button>
-                    </div>
+                                <button type="button">Ver sobre</button>             
+                            </div>
                 </section>
             </main>
             <footer></footer>
         </div>
+
+        <script>
+            function abrirMenu(){
+                if (menuMobile.style.display == "none"){
+                    menuMobile.style.display = "flex"
+                } else{
+                    menuMobile.style.display = "none"
+                }
+            }
+        
+        </script>
     </body>
 </html>

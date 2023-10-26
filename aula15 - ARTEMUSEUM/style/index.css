@@ -21,6 +21,10 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Bebas Neue', sans-serif;
 }
 
+h1{
+    cursor: pointer;
+}
+
 p{
     font-family: 'Roboto', sans-serif;
 }
@@ -53,23 +57,34 @@ li a{
     text-decoration: none;
     transition: 0.5s;
 }
-
-a:after{
+#menupc a:after{
     display      : flex;
     content      : '';
-    border-bottom: solid 2px #F5124B;
+    border-bottom: solid 2px #ffffff;
     transform    : scaleX(0);
     transition   : transform 300ms ease-in-out;
     transform-origin: 50% 100%;
 }
 
-a:hover:after {
+#menupc a:hover:after {
     transform: scaleX(1);
+}
+
+#menuIcon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+    
 }
 
 /* FIM CABECALHO */
 
 /* CONTEUDO */
+
+#menuMobile{
+    display: none;
+}
 
 main{
     padding: 20px 0px;
@@ -81,19 +96,20 @@ main{
 h4{
     font-weight: 900;
     font-size: 23px;
+    margin: 5px 0px;
 }
 
 hr{
-    width: 45%;
+    width: 46%;
     border: 2px solid #F5124B;
 }
 
 #destaque{
     width: 60%;
     padding: 20px;
-    margin: 22px 0px;
+    margin: 30px 0px;
     border-radius: 10px;
-    border: 1px solid  gray;
+    box-shadow: 0px 0px 10px  #dddcdc;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,6 +143,14 @@ button{
     border: none;
     color: white;
     border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover{
+    animation: botao 0.5s 1 0 ;
+    width: 110px;
+    height: 45px;
 }
 
 #textpag{
@@ -135,12 +159,11 @@ button{
 }
 
 #galeria{
-    width: 60%;
+    width: 90%;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: row;
-    margin: 10px 10px;
+    margin: 10px 0px;
     gap: 10px;
     flex-wrap: wrap;
 }
@@ -150,19 +173,37 @@ button{
 }
 
 .post{
-    width: 27%; 
+    width: 20%; 
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    border: 1px solid gray;
+    box-shadow: 0px 0px 10px  #dddcdc;
     border-radius: 10px;
 }
 
+h5{
+    font-weight: 900;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 768px){
+    #destaque{
+        width: 50%;
+        transition: 0.6s;
+    }
+}
+
+ @media screen and (max-width: 1100px){
+    #destaque{
+        width: 70%;
+        transition: 0.7s;
+    }
+} 
+
+
 /* FIM CONTEUDO */
-
-
 
 footer{
     height: 60px;
