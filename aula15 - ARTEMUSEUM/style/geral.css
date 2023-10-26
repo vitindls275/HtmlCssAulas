@@ -7,7 +7,7 @@
     padding: 0%;
 }
 
-#pagina,header,main,footer,#galeria{
+#pagina,header,main,footer{
     width: 100%;
     display: flex;
 }
@@ -39,6 +39,7 @@ nav{
     height: 100%;
     display: flex;
     align-items: center;
+    font-family: Roboto;
 }
 
 nav ul{
@@ -50,6 +51,20 @@ nav ul{
 li a{
     color: aliceblue;
     text-decoration: none;
+    transition: 0.5s;
+}
+
+a:after{
+    display      : flex;
+    content      : '';
+    border-bottom: solid 2px #F5124B;
+    transform    : scaleX(0);
+    transition   : transform 300ms ease-in-out;
+    transform-origin: 50% 100%;
+}
+
+a:hover:after {
+    transform: scaleX(1);
 }
 
 /* FIM CABECALHO */
@@ -70,7 +85,7 @@ h4{
 
 hr{
     width: 45%;
-    border: 2px solid #F5124B;;
+    border: 2px solid #F5124B;
 }
 
 #destaque{
@@ -120,12 +135,14 @@ button{
 }
 
 #galeria{
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     margin: 10px 10px;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .imagem{
@@ -133,7 +150,7 @@ button{
 }
 
 .post{
-    width: 200px; 
+    width: 27%; 
     padding: 20px;
     display: flex;
     flex-direction: column;
