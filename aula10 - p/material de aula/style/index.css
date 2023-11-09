@@ -1,22 +1,31 @@
-@keyframes borda{
-    0%{
-        border: 3px solid  #00000f;
-        transition: 0.5s;
-    }
-    50%{
-        border: 3px solid  aliceblue;
-        transition: 0.5s;
-    }
-    100%{
-        border: 3px solid  aqua;
-        transition: 0.5s;
+/* --------FONTS-------- */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap');
+/* --------FIM FONTS-------- */
+
+@media screen and (min-width: 768px){
+    .conteiner{
+        width: 60%;
+        transition: 0.6s;
     }
 }
 
+@media screen and (max-width: 1100px){
+    .conteiner{
+        width: 90%;
+        transition: 0.6s;
+    }
+
+    .submit button{
+        width: 100%;
+        transition: 0.3s;
+    }
+    
+} 
 
 *{
     margin: 0%;
     padding: 0%;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 #pagina{
@@ -28,45 +37,53 @@
     align-items: center;
 }
 
+/* --------MAIN-------- */
+
 main{
     width: 60%;
     height: 700px;
     background-color: aliceblue;
-    /* border-radius: 15px; */
-    box-shadow: 6px 6px 15px #9d4edd;
+    box-shadow: 0px 0px 25px #9d4edd; 
     display: flex;
     overflow: hidden;
-    background-color: #06010e00;
-    
+    background-color: #06010e00; 
 }
-#banner , #formulario{
+
+.banner , .formulario{
     width: 50%;
     height: 100%;
 }
-#banner{
+
+.banner{
     background-image: url(../images/blue-purple-dark-pink-cube-digital-art-4k-abstract.jpg);
     background-position: center;
     background-size: cover;
-    
-}
-#efeito{
-    width: 100%;
-    height: 100%;
-    /* background: linear-gradient(90deg, #00000f4b 10%,  #18032be7 60%);  */
-    background-color: #00000f77;
 }
 
-#formulario{
+.efeito{
+    width: 100%;
+    height: 100%;
+    background-color: #00000f7e;  
+}
+
+.formulario{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: aliceblue;
+    width: 50%;
 }
 
-h2{
-    margin: 20px 0px;
+form{
+    width: 95%;
+}
+
+h1,h2,h3,h4,h5,h6,label{
+    color: #9d4edd;
+    /* filter: brightness(2.5);  */
+}
+
+h1{
+    margin: 30px 0px 40px;
 }
 
 form{
@@ -76,29 +93,72 @@ form{
     font-size: 16px;
 }
 
+label{
+    margin: 0px 17px;
+}
+
 input{
-    width: 300px;
+    width: 90%;
+    color: white;
     height: 30px;
-    border-radius: 10px;
+    border-radius: 3px;
     padding: 5px;
     transition: 1s;
-}
-
-input:focus{
-    width: 320px;
-    height: 40px;
-    transition: 1s;
-    background-color: aqua;
-}
-
-input:hover{
-    transition: 0.3s;
-    animation-name: borda 1.5s infinite;
+    margin: 0 auto;
+    border: none;
+    background-color: #6868684b;
+    filter: brightness(2);
 }
 
 button{
-    width: 200px;
-    height: 30px;
-    margin: 10px auto;
+    width: 80%;
+    height: 40px;
     border-radius: 8px;
+    margin: 0px auto;
+    border: none;
+    background-color: #420079;
+    color: white;
 }
+
+button:hover{
+    width: 85%;
+    height: 45px;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px #b27ddd;
+}
+
+.submit{
+    width: 100%;
+    height: auto;
+    margin: 50px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+
+/* --------CSS SIGN IN-------- */
+.formIn input #nome{
+    margin-bottom: 40px;
+}
+
+
+.Forgot a{
+    width: 100%;
+    margin: 35px 0px;
+    height: auto;
+    color: white;
+}
+/* --------FIM CSS SIGN IN-------- */
+
+/* --------FIM MAIN-------- */
