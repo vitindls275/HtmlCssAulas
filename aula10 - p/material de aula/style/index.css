@@ -19,8 +19,21 @@
         width: 100%;
         transition: 0.3s;
     }
-    
 } 
+
+@media screen and (max-height: 650px){
+    .conteiner{
+        height: 90%;
+    }
+
+    form{
+        height: 70%;
+    }
+
+    .conteiner h1{
+        margin: 15px 0px 25px;
+    }
+}
 
 *{
     margin: 0%;
@@ -162,3 +175,4 @@ a{
 /* --------FIM CSS SIGN IN-------- */
 
 /* --------FIM MAIN-------- */
+
